@@ -1,0 +1,61 @@
+/* @import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+ */#logo{
+	width: 180px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-top:0px;
+}
+
+#menu{
+	height:75px;
+/*	background-color:black;
+*/	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#page-title{
+	
+}
+.script {
+  font-family: "Seaweed Script";
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  margin:0;
+  padding-top:20px;
+}
+p{
+	font-family:"Times New Roman", Times, serif;
+	font-size:15px;
+	font-style: normal;
+	color: #fff;
+	text-align: center;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #192a44;
+  color: white;
+  text-align: center;
+}
+
+#u{
+	border-bottom: 1px solid red;
+}
+.content{
+	background-color: #0c1523;
+}
+#link{
+	color: white;
+	font-size: 15px;
+	margin-left: auto;
+  	margin-right: auto;
+  	text-align: center;
+  	font-family: Arial, Helvetica, sans-serif;
+}
+.line{
+	line-height: 180%;
+}
