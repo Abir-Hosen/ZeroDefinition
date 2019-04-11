@@ -76,5 +76,35 @@ public class PageController {
 		
 		return mv;
 	}
+	
+	@RequestMapping(value= {"/blog/viewBlog/blog-title"})
+	public ModelAndView viewBlog() {
+		
+		ModelAndView mv= new ModelAndView("page");
+		mv.addObject("title", "Blog");
+		mv.addObject("userClickViewBlog",true);
+		
+		return mv;
+	}
+	
+	@RequestMapping(value= {"/news/viewNews/news-title"})
+	public ModelAndView viewNews() {
+		
+		ModelAndView mv= new ModelAndView("page");
+		mv.addObject("title", "News");
+		mv.addObject("userClickViewNews",true);
+		
+		return mv;
+	}
+	
+	@RequestMapping(value= {"/movies/viewMovie/movie-title"})
+	public ModelAndView viewMovies() {
+		
+		ModelAndView mv= new ModelAndView("page");
+		mv.addObject("title", "Movies");
+		mv.addObject("userClickViewMovie",true);
+		
+		return mv;
+	}
 
 }

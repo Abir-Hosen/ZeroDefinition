@@ -14,7 +14,7 @@
 	<!-- Address -->
 	<div class="ui row">
 		<div class="ui sixteen wide column">
-			<p>
+			<p style="text-align: center;">
 				Red Chillies Entertainments Pvt. Ltd.<br> Backstage,Plot no.
 				612,<br> Junction of Rama Krishna Mission Road & 15th Road,<br>
 				Santacruz (West), Mumbai 400054<br>

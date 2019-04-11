@@ -38,6 +38,7 @@
 <script type="text/javascript"
 	src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 <!-- Self coded javascript -->
+
 <script src="${js}/myapp.js"></script>
 <style>
 body, html {
@@ -47,7 +48,7 @@ body, html {
 
 .bg {
 	/* The image used */
-	background-image: url("${images}/5.jpg");
+	background-image: url("${images}/2.jpg");
 	/* Full height */
 	height: 100%;
 	/* Center and scale the image nicely */
@@ -93,6 +94,18 @@ body, html {
 
 			<c:if test="${userClickConnect==true }">
 				<%@ include file="./pages/connect.jsp"%>
+			</c:if>
+			
+			<c:if test="${userClickViewBlog==true }">
+				<%@ include file="./pages/viewblog.jsp"%>
+			</c:if>
+			
+			<c:if test="${userClickViewNews==true }">
+				<%@ include file="./pages/viewnews.jsp"%>
+			</c:if>
+			
+			<c:if test="${userClickViewMovie==true }">
+				<%@ include file="./pages/viewmovie.jsp"%>
 			</c:if>
 
 			<%@ include file="./shared/footer.jsp"%>

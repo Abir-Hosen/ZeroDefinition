@@ -4,7 +4,8 @@
   	margin-left: auto;
   	margin-right: auto;
   	margin-top:0px;
-}
+   	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
 
 #menu{
 	height:75px;
@@ -19,7 +20,7 @@
   font-family: "Seaweed Script";
   color: #fff;
   text-align: center;
-  font-size: 40px;
+  font-size: auto;
   position: relative;
   margin:0;
   padding-top:20px;
@@ -29,7 +30,7 @@ p{
 	font-size:15px;
 	font-style: normal;
 	color: #fff;
-	text-align: center;
+	text-align: left;
 }
 
 .footer {
@@ -58,4 +59,22 @@ p{
 }
 .line{
 	line-height: 180%;
+}
+
+.article{
+	color: #efffbc;
+	font-size: 26px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.date{
+	color: #ffffff;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.articleImg{
+	width: 100%;
+}
+#text{
+	color: #ffffff;
+	font-size: 30px;
 }

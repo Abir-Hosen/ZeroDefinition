@@ -11,7 +11,7 @@
 			</div>
 
 		</div>
-		<div class="ui row">
+		<div class="ui row content">
 
 			<div class="ui four wide column">
 				<img src="${images}/a1.png">
@@ -52,4 +52,4 @@
 		</div>
 
 	</div>
-
+<br><br><br>
