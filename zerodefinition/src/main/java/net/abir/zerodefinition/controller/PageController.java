@@ -1,11 +1,19 @@
 package net.abir.zerodefinition.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import net.abir.zerobackend.dao.MovieDAO;
+import net.abir.zerobackend.dto.Movie;
+
 @Controller
 public class PageController {
+	
+	@Autowired
+	private MovieDAO movieDAO;
 	
 	@RequestMapping(value= {"/","/home"})
 	public ModelAndView index() {
@@ -43,6 +51,9 @@ public class PageController {
 		ModelAndView mv= new ModelAndView("page");
 		mv.addObject("title", "Movies");
 		mv.addObject("userClickMovies",true);
+		
+		//passing movie
+		mv.addObject("movies", movieDAO.list());
 		
 		return mv;
 	}
@@ -97,10 +108,12 @@ public class PageController {
 		return mv;
 	}
 	
-	@RequestMapping(value= {"/movies/viewMovie/movie-title"})
-	public ModelAndView viewMovies() {
+	@RequestMapping(value= {"/movies/viewMovie/{id}/{moviename}"})
+	public ModelAndView viewMovies(@PathVariable("id") int id, @PathVariable("moviename") String moviename) {
 		
 		ModelAndView mv= new ModelAndView("page");
+		Movie movie = movieDAO.getById(id);
+		mv.addObject("movie", movie);
 		mv.addObject("title", "Movies");
 		mv.addObject("userClickViewMovie",true);
 		

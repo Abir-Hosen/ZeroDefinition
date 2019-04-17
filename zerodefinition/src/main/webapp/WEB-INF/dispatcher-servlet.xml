@@ -11,6 +11,7 @@
 
 	<!-- Scanning all components alike controller and others -->
 	<context:component-scan	base-package="net.abir.zerodefinition.controller" />
+	<context:component-scan	base-package="net.abir.zerobackend" />
 
 	<!-- Defining view url -->
 	<bean id="viewResolver"	class="org.springframework.web.servlet.view.InternalResourceViewResolver">

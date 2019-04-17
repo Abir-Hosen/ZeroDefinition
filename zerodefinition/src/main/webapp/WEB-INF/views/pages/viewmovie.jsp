@@ -2,10 +2,10 @@
 	<!-- title -->
 	<div class="ui row">
 		<div class="ui sixteen wide column">
-			<h1 class="script" id="page-title"><span id="u">MOVIE TITLE</span></h1>
+			<h1 class="script" id="page-title"><span id="u">${movie.name}</span></h1>
 		</div>
 		<div class="ui sixteen wide column line" >
-			<h3 class="date" style="text-align:center;">04 &nbsp; November &nbsp; 2018</h3>
+			<h3 class="date" style="text-align:center;">${movie.releseDate}</h3>
 		</div>
 	</div>
 	<div class="ui row">

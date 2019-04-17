@@ -63,7 +63,7 @@
 						placeholder="State">
 				</div>
 				<div class="field">
-					<textarea rows="5" cols="4" name="comment" placeholder="Comment" ></textarea>
+					<textarea rows="3" cols="4" name="comment" placeholder="Comment" ></textarea>
 				</div>
 				<button class="ui button" type="submit">Submit</button>
 			</form>
@@ -108,12 +108,10 @@
 			target="_blank">Open on google maps</a>
 		</div>
 	</div>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
+	
 	<!-- Finished -->
 
-</div>
+</div><br>
+	<br>
+	<br>
+	<br>
