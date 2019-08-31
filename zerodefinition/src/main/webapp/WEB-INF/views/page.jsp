@@ -28,36 +28,33 @@
 
 <link rel="stylesheet" type="text/css"
 	href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.2/semantic.min.css">
-
-<!-- Custom styles for this template -->
 <link href="${css}/myapp.css" rel="stylesheet">
 
-<!-- Loading jquery -->
 <script type="text/javascript"
 	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript"
 	src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-<!-- Self coded javascript -->
-
 <script src="${js}/myapp.js"></script>
-<style>
-body, html {
-	height: 100%;
-	margin: 0;
-}
 
-.bg {
-	/* The image used */
-	background-image: url("${images}/3.png");
-	/* Full height */
-	height: 100%;
-	/* Center and scale the image nicely */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: round;
-	background-size: cover;
-}
+<style>
+	body, html {
+		height: 100%;
+		margin: 0;
+	}
+	
+	.bg {
+		/* The image used */
+		background-image: url("${images}/23.jpg");
+		/* Full height */
+		height: 100%;
+		/* Center and scale the image nicely */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: round;
+		background-size: cover;
+	}
 </style>
+
 <link rel="icon" href="${images}/favicon.jpg" />
 </head>
 
@@ -99,13 +96,25 @@ body, html {
 			<c:if test="${userClickViewBlog==true }">
 				<%@ include file="./pages/viewblog.jsp"%>
 			</c:if>
-			
+			 
 			<c:if test="${userClickViewNews==true }">
 				<%@ include file="./pages/viewnews.jsp"%>
 			</c:if>
 			
 			<c:if test="${userClickViewMovie==true }">
 				<%@ include file="./pages/viewmovie.jsp"%>
+			</c:if>
+			
+			<c:if test="${userClickManageMovie==true }">
+				<%@ include file="./pages/manageMovies.jsp"%>
+			</c:if>
+			
+ 			<c:if test="${userClickManageNews==true }">
+				<%@ include file="./pages/manageNews.jsp"%>
+			</c:if>
+			
+			<c:if test="${userClickManageBlog==true }">
+				<%@ include file="./pages/manageBlog.jsp"%>
 			</c:if>
 
 			<%@ include file="./shared/footer.jsp"%>

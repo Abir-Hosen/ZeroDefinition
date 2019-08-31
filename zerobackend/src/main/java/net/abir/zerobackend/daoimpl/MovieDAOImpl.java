@@ -57,8 +57,12 @@ public class MovieDAOImpl implements MovieDAO {
 	}
 
 	public List<Movie> listMovieByCategory(int categoryId) {
-		// TODO Auto-generated method stub
-		return null;
+		String activeByCat="FROM Movie WHERE active = :active AND catId = :catId";
+		Query query = sessionFactory.getCurrentSession()
+				.createQuery(activeByCat);
+		query.setParameter("catId", categoryId);
+
+		return query.getResultList();
 	}
 
 	public List<Movie> listLatestMovie(Date date) {

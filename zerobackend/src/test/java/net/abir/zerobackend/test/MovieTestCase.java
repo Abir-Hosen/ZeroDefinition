@@ -25,11 +25,12 @@ public class MovieTestCase {
 		movieDAO=(MovieDAO)context.getBean("movieDAO");
 	}
 	
-/*	@Test
+	@Test
 	public void testCRUDMovie() {
 		movie = new Movie();
 		
 		movie.setName("Rashtro Vasha Bangla Chai");
+		movie.setCatId(1);
 		movie.setDirector("Hasib Al Amin");
 		movie.setCast("Ashraful Islam");
 		movie.setDescription("This is description");
@@ -39,7 +40,7 @@ public class MovieTestCase {
 		movie.setReleseDate(new Date());
 		
 		assertEquals("Something went wrong while inserting a new movie!", true, movieDAO.add(movie));
-	}*/
+	}
 
 /*	@Test
 	public void testGetMovie() {
@@ -68,33 +69,33 @@ public class MovieTestCase {
 		assertEquals("Fetch problem", 3, movieDAO.listActiveMovie().size());
 	}*/
 
-	@Test
-	public void testCRUDCategory() {
-		movie = new Movie();
-
-		movie.setName("Keno Hothat Tumi Ele");
-		movie.setDirector("Shakib ony");
-		movie.setCast("Rafi & Jemi");
-		movie.setDescription("This is description");
-		movie.setSynopse("This is synopsse");
-		movie.setImageUrl("IUrl");
-		movie.setVideoUrl("VUrl");
-		movie.setReleseDate(new Date());
-
-		assertEquals("Something went wrong while inserting a new movie!", true, movieDAO.add(movie));
-
-		movie = movieDAO.getById(2);
-		assertEquals("Fetching problem", "Philosophy", movie.getName());
-
-		movie = movieDAO.getById(2);
-		movie.setName("Dorshon");
-		movie.setReleseDate(new Date());
-		assertEquals("Updating problem", true, movieDAO.update(movie));
-
-		movie = movieDAO.getById(1);
-		assertEquals("Updating problem", true, movieDAO.delete(movie));
-
-		assertEquals("Fetch problem", 3, movieDAO.listActiveMovie().size());
-	}
+//	@Test
+//	public void testCRUDCategory() {
+//		movie = new Movie();
+//
+//		movie.setName("Keno Hothat Tumi Ele");
+//		movie.setDirector("Shakib ony");
+//		movie.setCast("Rafi & Jemi");
+//		movie.setDescription("This is description");
+//		movie.setSynopse("This is synopsse");
+//		movie.setImageUrl("IUrl");
+//		movie.setVideoUrl("VUrl");
+//		movie.setReleseDate(new Date());
+//
+//		assertEquals("Something went wrong while inserting a new movie!", true, movieDAO.add(movie));
+//
+//		movie = movieDAO.getById(2);
+//		assertEquals("Fetching problem", "Philosophy", movie.getName());
+//
+//		movie = movieDAO.getById(2);
+//		movie.setName("Dorshon");
+//		movie.setReleseDate(new Date());
+//		assertEquals("Updating problem", true, movieDAO.update(movie));
+//
+//		movie = movieDAO.getById(1);
+//		assertEquals("Updating problem", true, movieDAO.delete(movie));
+//
+//		assertEquals("Fetch problem", 3, movieDAO.listActiveMovie().size());
+//	}
 
 }

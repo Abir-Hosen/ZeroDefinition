@@ -20,41 +20,35 @@
 	<div class="ui row">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		<!-- Selection Option -->
 		<select class="ui dropdown">
-		  <option value="All">All Movies</option>
-		  <option value="B">Valobasar epith opith</option>
-		  <option value="W">Olikhito golpo</option>
-		  <option value="P">Philosophy</option>
-		  <option value="C">Sohojia Ma</option>
-		  <option value="M">Songram</option>
+			<option value="Default">All Categories</option>
+			<c:forEach items="${categories}" var="category">
+		 		<option value="${category.id}">${category.name }</option>
+		  	</c:forEach>
 		</select>
 		
 		<!-- Search Option -->&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
-
-			<div class="ui search">
-			  <input class="prompt" type="text" placeholder="Search Movies...">
-			  <div class="results"></div>
-			</div>
+		<div class="ui search">
+		  <input class="prompt" type="text" placeholder="Search Movies...">
+		  <div class="results"></div>
+		</div>
 	</div>
+	
+	<div><br></div>
+	
 	<!-- Article -->
-	<div class="ui sixteen wide column">
-		<div class="ui row"><a class="article" href="${contextRoot}/blog/viewBlog/blog-title">This is the title of the article</a></div><br>
-		<div class="ui row"><label class="date">Date: November 9, 2018</label></div><br>
-		<div class="ui row"><img class="articleImg" src="${images}/b1.jpg"></div><br>
-		<div class="ui row"><p>This is the article. This is the article. This is the article. 
-		This is the article. This is the article. This is the article. This is the article. 
-		This is the article. This is the article. This is the article. This is the article. 
-		This is the article... </p></div>
-		<div class="ui row"><a style="color: red; font-size: 15px;" href="${contextRoot}/blog/viewBlog/blog-title">Read More...</a></div><br>
-	</div><br>
-	<div class="ui sixteen wide column">
-		<div class="ui row"><a class="article" href="${contextRoot}/blog/viewBlog/blog-title">This is the title of the article</a></div><br>
-		<div class="ui row"><label class="date">Date: November 9, 2018</label></div><br>
-		<div class="ui row"><img class="articleImg" src="${images}/b1.jpg"></div><br>
-		<div class="ui row"><p>This is the article. This is the article. This is the article. 
-		This is the article. This is the article. This is the article. This is the article. 
-		This is the article. This is the article. This is the article. This is the article. 
-		This is the article... </p></div>
-		<div class="ui row"><a style="color: red; font-size: 15px;" href="${contextRoot}/blog/viewBlog/blog-title">Read More...</a></div><br>
-	</div><br>
+	<!-- Logic Area Started -->
+	<c:forEach items="${blogs}" var="blog">
+	<div class="ui sixteen wide column content">
+		<div class="ui row"><a class="article" href="${contextRoot}/blog/viewBlog/${blog.id }/${blog.title}">${blog.title}</a></div><br>
+		<div class="ui row"><label class="date">${blog.pubDate.toString().substring(0, 10) }</label></div><br>
+		<div class="ui row"><img class="articleImg" src="${images}/${blog.imgUrl}.jpg"></div><br>
+		<div class="ui row"><p>${blog.description.substring(0, 250) }&nbsp...</p></div><br>
+		<div class="ui row"><a style="color: red; font-size: 15px;" href="${contextRoot}/blog/viewBlog/${blog.id }/${blog.title}">Read More ...</a></div>
+	</div>
+	<div>
+		<br><br><br>
+	</div>
+	</c:forEach>
+	<!-- Logic Area Ended -->
 	
 </div><br><br>

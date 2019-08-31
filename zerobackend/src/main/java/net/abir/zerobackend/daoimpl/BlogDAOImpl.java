@@ -10,13 +10,15 @@ import org.springframework.transaction.annotation.Transactional;
 
 import net.abir.zerobackend.dao.BlogDAO;
 import net.abir.zerobackend.dto.Blog;
+import net.abir.zerobackend.dto.Images;
+import net.abir.zerobackend.dto.Videos;
 
 @Repository("blogDAO")
 @Transactional
 public class BlogDAOImpl implements BlogDAO {
 
 	@Autowired
-	SessionFactory sessionFactory;
+	private SessionFactory sessionFactory;
 
 	public boolean create(Blog blog) {
 		try {

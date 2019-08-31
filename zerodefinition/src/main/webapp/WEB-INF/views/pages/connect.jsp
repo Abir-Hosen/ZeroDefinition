@@ -1,3 +1,22 @@
+<%@taglib prefix="sf" uri="http://www.springframework.org/tags/form" %>
+
+<!-- Alert -->
+<c:if test="${not empty message}">	
+<div class="ui container">
+	<div class="ui basic modal">
+		<div class="header">
+			Note:
+		</div>
+		<div class="content">
+			<p>${message} </p>
+		</div>
+		<div class="actions">
+			<div class="ui green approve button">Approve</div>
+		</div>
+	</div>
+</div>
+</c:if>
+<!-- Alert -->
 
 <div class="ui grid">
 
@@ -14,10 +33,9 @@
 	<!-- Address -->
 	<div class="ui row">
 		<div class="ui sixteen wide column">
-			<p style="text-align: center;">
-				Red Chillies Entertainments Pvt. Ltd.<br> Backstage,Plot no.
-				612,<br> Junction of Rama Krishna Mission Road & 15th Road,<br>
-				Santacruz (West), Mumbai 400054<br>
+			<p style="text-align: center; font-size:140%;">
+				Zero Definition Entertainments Pvt. Ltd.<br> Noakhali Science & Technology University
+				<br> Sonapur, Maijdee court, Noakhali<br>
 			</p>
 		</div>
 	</div>
@@ -33,40 +51,46 @@
 
 		<!-- Sent Message -->
 		<div class="ui four wide column">
-			<!-- Selection Option -->
-			<select class="ui fluid dropdown">
-			  <option class="default text">Select Enquery Type</option>
-			  <option value="B">Business</option>
-			  <option value="W">Work</option>
-			  <option value="P">Press</option>
-			  <option value="C">Creative</option>
-			  <option value="M">Marketing</option>
-			</select>
-			<!-- Finished -->
-			<br>
 			<!-- Form Option -->
-			<form class="ui form">
+			<sf:form class="ui form" modelAttribute="connect"
+				action="${contextRoot}/connect" method="POST">
+				<!-- Selection Option -->
+				<sf:select class="ui fluid dropdown" path="enqId"
+					items="${enquery }"
+					itemLabel="name"
+					itemValue="id"
+					/>
+				<!-- Finished -->
+				<br>
 				<div class="field">
-					<input type="text" name="name"
-						placeholder="Full Name">
-				</div>
+					<sf:input type="text" path="name"
+						placeholder="Full Name"></sf:input>
+<%-- 					<sf:errors path="name" cssClass="error" element="em"></sf:errors>
+ --%>				</div>
 				<div class="field">
-					<input type="text" name="email"
-						placeholder="Email">
-				</div>
+					<sf:input type="text" path="email"
+						placeholder="Email"></sf:input>
+<%-- 					<sf:errors path="email" cssClass="error" element="em"></sf:errors>
+ --%>				</div>
 				<div class="field">
-					<input type="number" name="number"
-						placeholder="Phone Number">
-				</div>
+					<sf:input type="number" path="contact"
+						placeholder="Phone Number"></sf:input>
+<%-- 					<sf:errors path="contact" cssClass="error" element="em"></sf:errors>
+ --%>				</div>
 				<div class="field">
-					<input type="text" name="state"
-						placeholder="State">
-				</div>
+					<sf:input type="text" path="state"
+						placeholder="State"></sf:input>
+<%-- 					<sf:errors path="state" cssClass="error" element="em"></sf:errors>
+ --%>				</div>
 				<div class="field">
-					<textarea rows="3" cols="4" name="comment" placeholder="Comment" ></textarea>
-				</div>
+					<sf:textarea rows="3" cols="4" path="comment" placeholder="Comment" ></sf:textarea>
+<%-- 					<sf:errors path="comment" cssClass="error" element="em"></sf:errors>
+ --%>				</div>
+				
+				<sf:hidden path="active"/>
+				
 				<button class="ui button" type="submit">Submit</button>
-			</form>
+			</sf:form>
 			<!-- Finished Form -->
 
 		</div>
@@ -76,23 +100,23 @@
 		<div class="ui four wide column line" id="link">
 			<div class="ui row">
 				<i class="simplybuilt icon"></i><br> BUSINESS ENQUERY<br>
-				<a style="color: red;" href="#">business@redchillies.com</a>
+				<a style="color: red;" href="#">business@zerodefinition.com</a>
 			</div>
 			<div class="ui row">
 				<i class="handshake icon"></i><br> WORK WITH US<br> <a
-					style="color: red;" href="#">work@redchillies.com</a>
+					style="color: red;" href="#">work@zerodefinition.com</a>
 			</div>
 			<div class="ui row">
 				<i class="newspaper icon"></i><br> PRESS ENQUERY<br> <a
-					style="color: red;" href="#">press@redchillies.com</a>
+					style="color: red;" href="#">press@zerodefinition.com</a>
 			</div>
 			<div class="ui row">
 				<i class="archive icon"></i><br> CREATIVE ENQUERY<br> <a
-					style="color: red;" href="#">creative@redchillies.com</a>
+					style="color: red;" href="#">creative@zerodefinition.com</a>
 			</div>
 			<div class="ui row">
 				<i class="industry icon"></i><br> MARKETING<br> <a
-					style="color: red;" href="#">marketing@redchillies.com</a>
+					style="color: red;" href="#">marketing@zerodefinition.com</a>
 			</div>
 		</div>
 		<!-- Finished -->

@@ -1,15 +1,12 @@
 package net.abir.zerobackend.test;
 
-import static org.junit.Assert.assertEquals;
-
-import java.util.Date;
-
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import net.abir.zerobackend.dao.BlogDAO;
 import net.abir.zerobackend.dto.Blog;
+import net.abir.zerobackend.dto.Images;
 
 public class BlogTestCase {
 	
@@ -49,7 +46,7 @@ public class BlogTestCase {
 		blog.setCatId(3);
 		blog.setTitle("Title 3");
 		assertEquals("Something went wrong while inserting a new blog!", true, blogDAO.update(blog));
-		*/
 		assertEquals("Fetch problem", 5, blogDAO.blogListActive().size());
+		*/		
 	}
 }

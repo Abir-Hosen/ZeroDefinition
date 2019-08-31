@@ -5,18 +5,34 @@
 			<h1 class="script" id="page-title"><span id="u">${movie.name}</span></h1>
 		</div>
 		<div class="ui sixteen wide column line" >
-			<h3 class="date" style="text-align:center;">${movie.releseDate}</h3>
+			<h3 class="date" style="text-align:center;">${movie.releseDate.toString().substring(0, 10) }</h3>
 		</div>
 	</div>
 	<div class="ui row">
-		<img class="articleImg" src="${images}/b2.jpg">
+		<img class="articleImg" src="${images}/${movie.imageUrl}.jpg">
 	</div>
+	
 	<div class="ui row">
 		<div class="ui four item fluid red pointing inverted menu" style="text-align:center;">
-			<a class="item">SYNOPSIS</a>
-			<a class="item">CAST & CRIEW</a>
+			<a class="active item">SYNOPSIS</a>
+		</div>
+		<div class="ui sixteen wide column" style="text-align: center; color: yellow; font-size: 13px;">
+			${movie.synopse } 
+		</div>
+	</div>
+	
+	<div class="ui row">
+		<div class="ui four item fluid red pointing inverted menu" style="text-align:center;">
+			<a class="active item">CAST & CRIEW</a>
+		</div>
+		<div class="ui sixteen wide column" style="text-align: center; color: yellow; font-size: 13px;">
+			${movie.cast } 
+		</div>
+	</div>
+	
+	<div class="ui row">
+		<div class="ui four item fluid red pointing inverted menu" style="text-align:center;">
 			<a class="active item">GALLERY</a>
-			<a class="item">VIDEOS</a>
 		</div>
 	</div>
 	<div class="ui row">
@@ -45,6 +61,12 @@
 			<img src="${images}/g6.jpg"><br>
 		</div>
 		<div class="ui two wide column">
+		</div>
+	</div>
+	
+	<div class="ui row">
+		<div class="ui four item fluid red pointing inverted menu" style="text-align:center;">
+			<a class="active item">VIDEOS</a>
 		</div>
 	</div>
 	

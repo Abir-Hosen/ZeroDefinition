@@ -22,9 +22,9 @@
 			</div>
 			
 			<div class="three wide column">
-			<i class="facebook icon"></i>&nbsp
+			<a href="https://www.facebook.com/Zer0Definition/"><i class="facebook icon"></i></a>&nbsp
 			<i class="google icon"></i>&nbsp
-			<i class="youtube icon"></i>&nbsp
+			<a href="https://www.youtube.com/channel/UCUMPv2cFdjzyeF3kcoRyPug"><i class="youtube icon"></i></a>&nbsp
 			<i class="instagram icon"></i>&nbsp
 			<i class="linkedin icon"></i>&nbsp
 			<i class="whatsapp icon"></i>

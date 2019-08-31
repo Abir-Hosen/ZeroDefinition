@@ -23,13 +23,16 @@ $(function(){
 		$('#connect').addClass('active');
 		break;
 	}
-	
+
+	$('.dropdown').dropdown();
+
+	$('.special.cards .image').dimmer({
+		  on: 'hover'
+		});
+
+	$('.ui.modal').modal("show");
+
 });
 
-$('.dropdown').dropdown();
-
-$('.special.cards .image').dimmer({
-	  on: 'hover'
-	});
 
 
