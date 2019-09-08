@@ -6,6 +6,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Transient;
+
+import org.hibernate.validator.constraints.NotBlank;
 
 @Entity
 public class User implements Serializable{
@@ -18,12 +21,23 @@ public class User implements Serializable{
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private int usercat;
+	@NotBlank(message="Please enter the name")
 	private String name;
+	@NotBlank(message="Please enter the Email")
 	private String email;
 	private String password;
 	private boolean allowance;
 	private boolean active;
 	
+	@Transient
+	private String confirmPassword;
+	
+	public String getConfirmPassword() {
+		return confirmPassword;
+	}
+	public void setConfirmPassword(String confirmPassword) {
+		this.confirmPassword = confirmPassword;
+	}
 	public int getId() {
 		return id;
 	}

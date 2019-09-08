@@ -2,13 +2,13 @@
 
 <%@include file="../shared/flows-header.jsp"%>
 <br><br>
-<div class="ui segment content">
+<div class="ui segment content" style="background-color: #192a44;">
 	<div class="ui two column very relaxed grid">
 		<div class="column">
-			<h4>${registerModel.user.name}</h4><br>
+			<h4 style="color: white;">${registerModel.user.name}</h4><br>
 			<p>Email: ${registerModel.user.email}</p>
-			<br>
-			<a href="${flowExecutionUrl}&_eventId_userinfo">
+			<br><br><br><br><br><br><br>
+			<a href="${flowExecutionUrl}&_eventId_personal">
 			<button class="ui button">
 				Edit&nbsp; -&nbsp;  User Info&nbsp; &nbsp;<i
 					class="chevron up icon"></i>
@@ -18,10 +18,10 @@
 		<div class="column">
 			<p>Email: ${registerModel.userinfo.address}</p><br>
 			<p>Email: ${registerModel.userinfo.work}</p><br>
-			<p>Email: ${registerModel.user.birth}</p><br>
-			<p>Email: ${registerModel.user.mobile}</p>
+			<p>Email: ${registerModel.userinfo.birth}</p><br>
+			<p>Email: ${registerModel.userinfo.mobile}</p>
 			<br>
-			<a href="${flowExecutionUrl}&_eventId_personal">
+			<a href="${flowExecutionUrl}&_eventId_userinfo">
 			<button class="ui button">
 				Edit&nbsp; -&nbsp; User&nbsp; &nbsp;<i
 					class="chevron up icon"></i>
@@ -45,11 +45,11 @@
 					</p>
 				</div>
 			</div><br>
-			<a href="${flowExecutionUrl}&_eventId_personal">
-			<button class="ui button">
+			<a href="${flowExecutionUrl}&_eventId_personal" class="ui button">personal
+<!-- 			<button class="ui button">
 				Edit&nbsp; -&nbsp; User&nbsp; &nbsp;<i
 					class="chevron up icon"></i>
-			</button>
+			</button> -->
 			</a>
 		</div>
 
@@ -63,11 +63,11 @@
 					</p>
 				</div>
 			</div><br>
-			<a href="${flowExecutionUrl}&_eventId_userinfo">
-			<button class="ui button">
+			<a href="${flowExecutionUrl}&_eventId_userinfo" class="ui button">User info
+<!-- 			<button class="ui button">
 				Edit&nbsp; -&nbsp;  User Info&nbsp; &nbsp;<i
 					class="chevron up icon"></i>
-			</button>
+			</button> -->
 			</a>
 		</div>
 		
@@ -76,11 +76,6 @@
 </div> --%>
 
 <div><br><br></div>
-<a href="${flowExecutionUrl}&_eventId_submit">
-<button class="ui button">
-	Next&nbsp; -&nbsp; Submit&nbsp; &nbsp;<i
-		class="chevron right icon"></i>
-</button>
-</a>
+<a href="${flowExecutionUrl}&_eventId_submit" class="ui button">confirm</a>
 <%@include file="../shared/flows-footer.jsp"%>
 

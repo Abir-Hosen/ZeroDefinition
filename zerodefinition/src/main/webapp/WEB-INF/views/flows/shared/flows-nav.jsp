@@ -1,14 +1,13 @@
 
 <div class="ui ten item inverted secondary pointing menu" id="menu">
-	<a class="ui image" id="logo" href="${flowExecutionUrl}&_eventId_home"><img
-		src="${images}/logo.png"></a> <a class="item" id="home"
-		href="${flowExecutionUrl}&_eventId_home">HOME</a> <a class="item"
-		id="story" href="${contextRoot}/ourstory">OUR STORY</a> <a
-		class="item" id="team" href="${contextRoot}/theteam">THE TEAM</a> <a
-		class="item" id="movies" href="${contextRoot}/movies">MOVIES</a> <a
-		class="item" id="news" href="${contextRoot}/news">NEWS</a> <a
-		class="item" id="blog" href="${contextRoot}/blog">BLOG</a> <a
-		class="item" id="connect" href="${contextRoot}/connect">CONNECT</a> <a
-		class="item" id="signup" href="${contextRoot}/register">SIGN UP</a> <a
-		class="item" id="login" href="${contextRoot}/login">LOG IN</a>
+
+	<a class="ui image" id="logo" href="${flowExecutionUrl}&_eventId_home">
+		<img src="${images}/logo.png">
+	</a> 
+	<a class="item" id="home" href="${flowExecutionUrl}&_eventId_home">HOME</a> 
+	<a class="item" id="movies" href="${contextRoot}/movies">MOVIES</a> 
+	<a class="item" id="news" href="${contextRoot}/news">NEWS</a> 
+	<a class="item" id="blog" href="${contextRoot}/blog">BLOG</a> 
+	<a class="item" id="login" href="${contextRoot}/login">LOG IN</a>
+	
 </div>

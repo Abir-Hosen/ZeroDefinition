@@ -8,6 +8,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.hibernate.validator.constraints.NotBlank;
+import org.springframework.format.annotation.DateTimeFormat;
+
 @Entity
 public class Userinfo implements Serializable{
 	
@@ -19,13 +22,20 @@ public class Userinfo implements Serializable{
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private int user;
+	@NotBlank(message="Please enter the address")
 	private String address;
+	@NotBlank(message="Please enter the Work")
 	private String work;
 	private Date birth;
+	@NotBlank(message="Please enter your country")
 	private String country;
+	@NotBlank(message="Please enter the mobile")
 	private String mobile;
+	@NotBlank(message="Please enter about yours")
 	private String about;
+	@NotBlank(message="Please enter the blood group")
 	private String blood;
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date date;
 	
 	public int getId() {
