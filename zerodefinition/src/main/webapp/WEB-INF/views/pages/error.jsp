@@ -22,7 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="An ecomerce based project">
 <meta name="author" content="Abir Hosen">
-
+ 
 <meta name="${_csrf}" content="${_csrf.token}">
 <meta name="${_csrf_header}" content="${_csrf.headerName}">
 
@@ -66,61 +66,28 @@
 	<div>
 		<div class="ui container">
 
-			<%@ include file="./shared/nav.jsp"%>
-
-			<c:if test="${userClickHome==true }">
-				<%@ include file="./pages/home.jsp"%>
-			</c:if>
-
-			<c:if test="${userClickOurStory==true }">
-				<%@ include file="./pages/ourstory.jsp"%>
-			</c:if>
-
-			<c:if test="${userClickTheTeam==true }">
-				<%@ include file="./pages/theteam.jsp"%>
-			</c:if>
-
-			<c:if test="${userClickMovies==true }">
-				<%@ include file="./pages/movies.jsp"%>
-			</c:if>
-
-			<c:if test="${userClickNews==true }">
-				<%@ include file="./pages/news.jsp"%>
-			</c:if>
-
-			<c:if test="${userClickBlog==true }">
-				<%@ include file="./pages/blog.jsp"%>
-			</c:if>
-
-			<c:if test="${userClickConnect==true }">
-				<%@ include file="./pages/connect.jsp"%>
-			</c:if>
+			<%@ include file="../shared/nav.jsp"%>
 			
-			<c:if test="${userClickViewBlog==true }">
-				<%@ include file="./pages/viewblog.jsp"%>
-			</c:if>
-			 
-			<c:if test="${userClickViewNews==true }">
-				<%@ include file="./pages/viewnews.jsp"%>
-			</c:if>
-			
-			<c:if test="${userClickViewMovie==true }">
-				<%@ include file="./pages/viewmovie.jsp"%>
-			</c:if>
-			
-			<c:if test="${userClickManageMovie==true }">
-				<%@ include file="./pages/manageMovies.jsp"%>
-			</c:if>
-			
- 			<c:if test="${userClickManageNews==true }">
-				<%@ include file="./pages/manageNews.jsp"%>
-			</c:if>
-			
-			<c:if test="${userClickManageBlog==true }">
-				<%@ include file="./pages/manageBlog.jsp"%>
-			</c:if>
+			<br><br><br><br>
+				
+			<!-- Details -->
+			<div class="ui sixteen wide column">
+				<div class="ui row">
+					<p>${errorTitle }</p>
+				</div><br>
+				<div class="ui row">
+					<p>${errorDescription }</p>
+				</div>
+				
+				<!--  ###################  Extended Info Logic area -->
+				
+				<!--  ###################  Extended Info Logic area finished -->
+				<br><br>
+				
+				<br><br><br>
+			</div>
 
-			<%@ include file="./shared/footer.jsp"%>
+			<%@ include file="../shared/footer.jsp"%>
 		</div>
 
 	</div>

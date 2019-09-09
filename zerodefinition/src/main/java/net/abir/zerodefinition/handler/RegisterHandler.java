@@ -5,6 +5,7 @@ import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.binding.message.MessageBuilder;
 import org.springframework.binding.message.MessageContext;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import net.abir.zerobackend.dao.UserDAO;
@@ -17,6 +18,9 @@ public class RegisterHandler {
 	
 	@Autowired
 	private UserDAO userDAO;
+	
+	@Autowired
+	private BCryptPasswordEncoder passwordEncoder;
 	
 	public RegisterModel init() {
 		
@@ -60,6 +64,7 @@ public class RegisterHandler {
 		
 		User user=model.getUser();
 		user.setUsercat(1);
+		user.setPassword(passwordEncoder.encode(user.getPassword()));
 		userDAO.addUser(user);
 		
 		Userinfo userinfo=model.getUserinfo();
