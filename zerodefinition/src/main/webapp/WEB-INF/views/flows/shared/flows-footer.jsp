@@ -35,7 +35,7 @@
 </div>
 
 <script type="text/javascript">
-		window.menu = '${title}';
+		window.menu = 'Sign Up';
 	</script>
 
 </body>

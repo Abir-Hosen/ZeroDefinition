@@ -73,11 +73,17 @@
 			<!-- Details -->
 			<div class="ui sixteen wide column">
 				<div class="ui row">
+					<p>${title }</p>
+				</div><br>
+				<div class="ui row">
 					<p>${errorTitle }</p>
 				</div><br>
 				<div class="ui row">
 					<p>${errorDescription }</p>
-				</div>
+				</div><br>
+				<div class="ui row">
+					<p>Today's date: <%= (new java.util.Date()).toLocaleString()%></p>
+				</div><br>
 				
 				<!--  ###################  Extended Info Logic area -->
 				

@@ -22,6 +22,12 @@ $(function(){
 	case 'Connect':
 		$('#connect').addClass('active');
 		break;
+	case 'Login':
+		$('#login').addClass('active');
+		break;
+	case 'Sign Up':
+		$('#signup').addClass('active');
+		break;
 	}
 
 	$('.dropdown').dropdown();

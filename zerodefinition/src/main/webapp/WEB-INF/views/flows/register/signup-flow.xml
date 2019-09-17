@@ -51,48 +51,4 @@
 		<transition on="home" to="home" validate="false"/>
 	</global-transitions>
 	
-	
-<!-- 	<var name="user" class="net.abir.zerobackend.dto.User"/>
-	<var name="userinfo" class="net.abir.zerobackend.dto.Userinfo"/>
-	
-	Returning and adding inside the flow a registerModel instance
-	<on-start>
-		<evaluate expression="registerHandler.init()" result="flowScope.registerModel"/>
-	</on-start>
-	
-	view the signup-personal page
-	<view-state id="personal" view="flows/register/signup-personal" model="user">
-		<transition on="userinfo" to="userinfo"/>
-		<on-exit>
-			<evaluate expression="registerHandler.addUser(flowScope.registerModel, user)" />			
-		</on-exit>
-	</view-state>
-	
-	<view-state id="userinfo" view="flows/register/signup-info" model="userinfo">
-		<transition on="confirm" to="confirm"/>
-		<transition on="personal" to="personal"/>
-		<on-exit>
-			<evaluate expression="registerHandler.addUserinfo(flowScope.registerModel, userinfo)"/>
-		</on-exit>
-	</view-state>
-	
-	<view-state id="confirm" view="flows/register/signup-confirm" model="flowScope.RegisterModel">
-		<transition on="personal" to="personal"/>
-		<transition on="userinfo" to="userinfo"/>
-		<transition on="submit" to="submit"/>
-	</view-state>
-	
-	<action-state id="submit">
-		<evalute expression="registerHandler.saveAll(flowScope.registerModel)" />
-		<transition on="success" to="success"/>
-	</action-state>
-	
-	<end-state id="home" view="externalRedirect:contextRelative:/" />
-	<end-state id="success" view="flows/register/signup-success"></end-state>
-	
-	global transition
-	<global-transitions>
-		<transition on="home" to="home" />
-	</global-transitions> -->
-	
 </flow>

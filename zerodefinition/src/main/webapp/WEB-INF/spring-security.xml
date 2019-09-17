@@ -23,7 +23,10 @@
 	<http pattern="/resources/**" security="none"/>
 
 	<http>
-		<intercept-url pattern="/manage/**" access="hasAuthority('1')" />
+ 		<intercept-url pattern="/manage/**" access="hasAnyAuthority('1','2')" />
+ 		<intercept-url pattern="/connect" access="hasAuthority('3')" />
+		<intercept-url pattern="/theteam" access="hasAnyAuthority('1','2','3')" />
+		<intercept-url pattern="/ourstory" access="hasAnyAuthority('1','2','3')" />
 		<intercept-url pattern="/**" access="permitAll"/>
 		<form-login login-page="/login" username-parameter="username" password-parameter="password"/>
 		<logout />

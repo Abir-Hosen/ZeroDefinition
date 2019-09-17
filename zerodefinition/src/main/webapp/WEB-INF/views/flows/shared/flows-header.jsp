@@ -23,7 +23,7 @@
 <meta name="description" content="An ecomerce based project">
 <meta name="author" content="Abir Hosen">
 
-<title>Zero Definition - ${title}</title>
+<title>Zero Definition - Sign Up</title>
 
 
 <link rel="stylesheet" type="text/css"

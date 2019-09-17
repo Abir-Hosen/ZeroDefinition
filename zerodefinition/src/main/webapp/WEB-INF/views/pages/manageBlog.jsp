@@ -81,6 +81,7 @@
 				</div>
 				
 				<sf:hidden path="id"/>
+				<sf:hidden path="access" value="3"/>
 				<sf:hidden path="pubDate"/>
 				<sf:hidden path="imgUrl"/>
 				<sf:hidden path="views"/>
