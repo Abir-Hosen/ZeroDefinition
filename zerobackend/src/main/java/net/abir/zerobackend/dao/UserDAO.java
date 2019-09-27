@@ -28,6 +28,6 @@ public interface UserDAO {
 	
 	//User CoverImages DAO
 	boolean addCoverImages(Coverimages coverimages);
-	
+
 
 }

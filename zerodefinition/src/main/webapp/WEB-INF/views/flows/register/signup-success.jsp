@@ -1,20 +1,32 @@
 <%@taglib prefix="sf" uri="http://www.springframework.org/tags/form"%>
 
 <%@include file="../shared/flows-header.jsp"%>
-
-	<sf:form class="ui form" method="POST" id="registerForm" modelAttribute="user">
-		<div class="field">
-			<label>Email</label>
-			<sf:input type="text" path="email" placeholder="Email"></sf:input>
-		</div>
-		<div class="field">
-			<label>Password</label>
-			<sf:input type="password" path="" placeholder="Enter Password"></sf:input>
-		</div>
-		<br>
-		<button class="ui button" name="_eventId_">Login &nbsp;&nbsp;&nbsp;<i class="terminal icon"></i></button>
-		
-	</sf:form>
-
+<div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+</div>
+<div class="ui icon message">
+	<i aria-hidden="true" class="circle notched loading icon"></i>
+	<div class="header">Welcome to Zero Definition</div>
+	<br>
+</div>
+<div class="ui message">
+	<ul>
+		<li>You can now have cover images on blog pages.
+		<li>Drafts will now auto-save while writing.
+		<li>We are fetching that content for you.
+		<li>Get the best news in your e-mail every day.
+		<li>This is a special notification which you can dismiss.
+	</ul>
+</div>
+<div class="ui message">
+	<div class="ui warning bottom attached message">
+		<i aria-hidden="true" class="help icon"></i> Already signed up? <a
+			href="${contextRoot}/login">Login here</a> instead.
+	</div>
+</div>
 
 <%@include file="../shared/flows-footer.jsp"%>

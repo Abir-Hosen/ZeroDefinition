@@ -20,7 +20,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta http-equiv="refresh" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="An ecomerce based project">
+<meta name="description" content="An Film Production based project">
 <meta name="author" content="Abir Hosen">
 
 <meta name="${_csrf}" content="${_csrf.token}">
@@ -31,12 +31,14 @@
 
 <link rel="stylesheet" type="text/css"
 	href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.2/semantic.min.css">
+
 <link href="${css}/myapp.css" rel="stylesheet">
 
 <script type="text/javascript"
 	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript"
 	src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+
 <script src="${js}/myapp.js"></script>
 
 <style>
@@ -47,13 +49,13 @@
 	
 	.bg {
 		/* The image used */
-		background-image: url("${images}/23.jpg");
+		background-image: url("${images}/13.jpg");
 		/* Full height */
 		height: 100%;
 		/* Center and scale the image nicely */
 		background-attachment: fixed;
-		background-position: center;
-		background-repeat: round;
+ /*		background-position: center;
+ */		background-repeat: round;
 		background-size: cover;
 	}
 </style>
@@ -118,6 +120,10 @@
 			
 			<c:if test="${userClickManageBlog==true }">
 				<%@ include file="./pages/manageBlog.jsp"%>
+			</c:if>
+			
+			<c:if test="${userClickProfile==true }">
+				<%@ include file="./pages/profile.jsp"%>
 			</c:if>
 
 			<%@ include file="./shared/footer.jsp"%>

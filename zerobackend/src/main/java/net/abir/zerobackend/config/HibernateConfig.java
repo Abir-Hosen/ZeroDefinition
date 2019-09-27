@@ -24,26 +24,26 @@ public class HibernateConfig {
 	private final static String DATABASE_DIALECT="org.hibernate.dialect.MySQLDialect";
 	private final static String DATABASE_USERNAME="root";
 	private final static String DATABASE_PASSWORD="";
-	
+
 	//Data source bean
 	@Bean("dataSource")
 	public DataSource getDataSource() {
 		BasicDataSource dataSource = new BasicDataSource();
-		
+
 		//Providing the database connection information
 		dataSource.setDriverClassName(DATABASE_DRIVER);
 		dataSource.setUrl(DATABASE_URL);
 		dataSource.setUsername(DATABASE_USERNAME);
 		dataSource.setPassword(DATABASE_PASSWORD);
-		
+
 		return dataSource;
 	}
-	
+
 	//Session Factory bean
 	@Bean
 	public SessionFactory getSessionFactory(DataSource dataSource) {
 		LocalSessionFactoryBuilder builder = new LocalSessionFactoryBuilder(dataSource);
-		
+
 		builder.addProperties(getHibernateProperties());
 		builder.scanPackages("net.abir.zerobackend.dto");
 		return builder.buildSessionFactory();

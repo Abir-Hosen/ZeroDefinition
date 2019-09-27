@@ -26,10 +26,12 @@ import net.abir.zerobackend.dao.ConnectDAO;
 import net.abir.zerobackend.dao.EnqueryDAO;
 import net.abir.zerobackend.dao.MovieDAO;
 import net.abir.zerobackend.dao.NewsDAO;
+import net.abir.zerobackend.dao.UserDAO;
 import net.abir.zerobackend.dto.Blog;
 import net.abir.zerobackend.dto.Connect;
 import net.abir.zerobackend.dto.Movie;
 import net.abir.zerobackend.dto.News;
+import net.abir.zerobackend.dto.User;
 
 @Controller
 public class PageController {
@@ -53,6 +55,9 @@ public class PageController {
 	
 	@Autowired
 	private ConnectDAO connectDAO;
+	
+	@Autowired
+	private UserDAO userDAO;
 	
 	@RequestMapping(value= {"/","/home"})
 	public ModelAndView index() {
@@ -246,6 +251,17 @@ public class PageController {
 			new SecurityContextLogoutHandler().logout(request, response, auth);
 		}
 		return "redirect:/login?logout";
+	}
+	
+	@RequestMapping(value= {"/profile/{id}"})
+	public ModelAndView viewProfile(@PathVariable("id") int userId) {
+		User user = userDAO.read(userId);
+		ModelAndView mv= new ModelAndView("page");
+		mv.addObject("title", user.getName());
+		mv.addObject("userClickProfile",true);
+		mv.addObject("user",user);
+		
+		return mv;
 	}
 
 }

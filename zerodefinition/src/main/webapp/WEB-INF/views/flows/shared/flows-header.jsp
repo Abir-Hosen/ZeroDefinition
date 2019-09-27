@@ -44,12 +44,12 @@ body, html {
 
 .bg {
 	/* The image used */
-	background-image: url("${images}/23.jpg");
+	background-image: url("${images}/13.jpg");
 	/* Full height */
 	height: 100%;
 	/* Center and scale the image nicely */
 	background-attachment: fixed;
-	background-position: center;
+/* 	background-position: center; */
 	background-repeat: round;
 	background-size: cover;
 }

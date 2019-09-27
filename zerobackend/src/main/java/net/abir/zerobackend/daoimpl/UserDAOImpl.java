@@ -33,8 +33,16 @@ public class UserDAOImpl implements UserDAO {
 	}
 
 	public User read(int userId) {
-		// TODO Auto-generated method stub
-		return null;
+		String selectQuery="From User WHERE id= :userId";
+		try {
+			return sessionFactory.getCurrentSession()
+					.createQuery(selectQuery, User.class)
+					.setParameter("userId", userId)
+					.getSingleResult();
+		}catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
 	}
 
 	public User getByEmail(String email) {

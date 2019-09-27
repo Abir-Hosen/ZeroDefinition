@@ -31,49 +31,6 @@
 	</div>
 	<div class="ui vertical divider">and</div>
 </div><br><br>
-<%-- <div class="ui grid">
-
-	<div class="ui row content">
-
-		<div class="ui eight wide column">
-			<div class="ui row">
-				<div class="ui column">
-					<p style="text-align: center; font-size:140%;">
-						Zero Definition Entertainments Pvt. Ltd.<br> 
-						Noakhali Science & Technology University<br> 
-						Sonapur, Maijdee court, Noakhali<br>
-					</p>
-				</div>
-			</div><br>
-			<a href="${flowExecutionUrl}&_eventId_personal" class="ui button">personal
-<!-- 			<button class="ui button">
-				Edit&nbsp; -&nbsp; User&nbsp; &nbsp;<i
-					class="chevron up icon"></i>
-			</button> -->
-			</a>
-		</div>
-
-		<div class="ui eight wide column">
-			<div class="ui row">
-				<div class="ui column">
-					<p style="text-align: center; font-size:140%;">
-						Zero Definition Entertainments Pvt. Ltd.<br> 
-						Noakhali Science & Technology University<br> 
-						Sonapur, Maijdee court, Noakhali<br>
-					</p>
-				</div>
-			</div><br>
-			<a href="${flowExecutionUrl}&_eventId_userinfo" class="ui button">User info
-<!-- 			<button class="ui button">
-				Edit&nbsp; -&nbsp;  User Info&nbsp; &nbsp;<i
-					class="chevron up icon"></i>
-			</button> -->
-			</a>
-		</div>
-		
-	</div>
-
-</div> --%>
 
 <div><br><br></div>
 <a href="${flowExecutionUrl}&_eventId_submit" class="ui button">confirm</a>

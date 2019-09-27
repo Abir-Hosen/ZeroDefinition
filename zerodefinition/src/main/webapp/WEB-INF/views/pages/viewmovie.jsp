@@ -9,7 +9,9 @@
 		</div>
 	</div>
 	<div class="ui row">
-		<img class="articleImg" src="${images}/${movie.imageUrl}.jpg">
+		<div class="iframe-container">
+			<iframe width="1150" height="660" src="https://www.youtube.com/embed/lZ_kvVAyVZM" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 	</div>
 	
 	<div class="ui row">

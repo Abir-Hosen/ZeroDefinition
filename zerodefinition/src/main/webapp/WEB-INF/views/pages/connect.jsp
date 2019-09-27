@@ -45,7 +45,7 @@
 
 		<!-- Google Map -->
 		<div class="ui eight wide column">
-			<img src="${images}/map.png">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.2582916705746!2d91.09814261446618!3d22.792891230593877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3754af712aaac0b7%3A0x4bab3d112f6b6f3f!2sNoakhali%20Science%20and%20Technology%20University!5e0!3m2!1sen!2sbd!4v1569620321377!5m2!1sen!2sbd" width="600" height="410" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 		</div>
 		<!-- Finished -->
 

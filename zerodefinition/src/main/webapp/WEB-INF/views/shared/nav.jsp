@@ -48,7 +48,7 @@
 					<span class="text">${userModel.name }</span> <i class="dropdown icon"></i>
 					<div class="menu">
 				 		<div class="header">USER-CAT</div>
-						<div class="header"><a href="#">Profile</a></div>
+						<div class="header"><a href="${contextRoot}/profile/${userModel.id}">Profile</a></div>
 						<div class="header">Home</div>
 						<div class="item">
 							<i class="dropdown icon"></i> <span class="text">Check</span>
