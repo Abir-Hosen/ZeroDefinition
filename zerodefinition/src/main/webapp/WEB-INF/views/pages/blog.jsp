@@ -17,7 +17,7 @@
 	</div>
 	
 	<!-- Search bar -->
-	<div class="ui row">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<%-- 	<div class="ui row">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		<!-- Selection Option -->
 		<select class="ui dropdown">
 			<option value="Default">All Categories</option>
@@ -32,7 +32,7 @@
 		  <div class="results"></div>
 		</div>
 	</div>
-	
+	 --%>
 	<div><br></div>
 	
 	<!-- Article -->

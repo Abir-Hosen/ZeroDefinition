@@ -26,6 +26,7 @@ public class Userinfo implements Serializable{
 	private String address;
 	@NotBlank(message="Please enter the Work")
 	private String work;
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date birth;
 	@NotBlank(message="Please enter your country")
 	private String country;
@@ -63,9 +64,11 @@ public class Userinfo implements Serializable{
 		this.work = work;
 	}
 	public Date getBirth() {
+		System.out.println("Getting: "+birth);
 		return birth;
 	}
 	public void setBirth(Date birth) {
+		System.out.println("Setting: "+birth);
 		this.birth = birth;
 	}
 	public String getCountry() {

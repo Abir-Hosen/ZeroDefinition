@@ -1,7 +1,7 @@
 <div class="ui grid">
 	<!-- title -->
 	<div class="ui row">
-		<div class="ui sixteen wide column">
+		<div class="ui sixteen wide column container log">
 			<h1 class="script" id="page-title"><span id="u">${movie.name}</span></h1>
 		</div>
 		<div class="ui sixteen wide column line" >
@@ -9,8 +9,14 @@
 		</div>
 	</div>
 	<div class="ui row">
-		<div class="iframe-container">
-			<iframe width="1150" height="660" src="https://www.youtube.com/embed/lZ_kvVAyVZM" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="ui four wide column">
+		</div>
+		<div class="ui eight wide centered column">
+			<div class="iframe-container">
+				${movie.videoUrl}
+			</div>
+		</div>
+		<div class="ui four wide column">
 		</div>
 	</div>
 	
@@ -18,7 +24,7 @@
 		<div class="ui four item fluid red pointing inverted menu" style="text-align:center;">
 			<a class="active item">SYNOPSIS</a>
 		</div>
-		<div class="ui sixteen wide column" style="text-align: center; color: yellow; font-size: 13px;">
+		<div class="ui sixteen wide column" style="text-align: center; color: #ff8c00; font-size: 18px; font-family: Arial, Helvetica, sans-serif;">
 			${movie.synopse } 
 		</div>
 	</div>
@@ -27,8 +33,16 @@
 		<div class="ui four item fluid red pointing inverted menu" style="text-align:center;">
 			<a class="active item">CAST & CRIEW</a>
 		</div>
-		<div class="ui sixteen wide column" style="text-align: center; color: yellow; font-size: 13px;">
+		<div class="ui sixteen wide column" style="text-align: center; color: #ff8c00; font-size: 18px; font-family: Arial, Helvetica, sans-serif;">
 			${movie.cast } 
+	</div>
+	</div>
+		<div class="ui row">
+		<div class="ui four item fluid red pointing inverted menu" style="text-align:center;">
+			<a class="active item">DESCRIPTION</a>
+		</div>
+		<div class="ui sixteen wide column" style="text-align: center; color: #ff8c00; font-size: 18px; font-family: Arial, Helvetica, sans-serif;">
+			${movie.description } 
 		</div>
 	</div>
 	
@@ -36,7 +50,15 @@
 		<div class="ui four item fluid red pointing inverted menu" style="text-align:center;">
 			<a class="active item">GALLERY</a>
 		</div>
+			<img src="${images}/${movie.imageUrl}.jpg"  style="display:block; margin-left: auto; margin-right: auto; width: 70%;">
+		</div>
+	
+	<%-- <div class="ui row">
+		<div class="ui four item fluid red pointing inverted menu" style="text-align:center;">
+			<a class="active item">GALLERY</a>
+		</div>
 	</div>
+	
 	<div class="ui row">
 		<div class="ui two wide column">
 		</div>
@@ -65,6 +87,7 @@
 		<div class="ui two wide column">
 		</div>
 	</div>
+	
 	
 	<div class="ui row">
 		<div class="ui four item fluid red pointing inverted menu" style="text-align:center;">
@@ -392,7 +415,8 @@
 			
 		</div>
 		<!-- logic area finished -->
-	</div>
+	</div> --%>
 	
+
 	
 </div><br><br><br>

@@ -3,6 +3,7 @@
 <%@include file="../shared/flows-header.jsp"%>
 
 	<sf:form class="ui form" method="POST" id="registerForm" modelAttribute="user">
+	<div style="margin: 50px 100px;">
 		<div class="field">
 			<label>User Name</label> 
 			<sf:input type="text" path="name" placeholder="Full Name"></sf:input>
@@ -27,6 +28,7 @@
 		<sf:hidden path="active"/>
 		<br>
 		<button class="ui button" name="_eventId_userinfo" type="submit">Next&nbsp; -&nbsp; Info&nbsp; &nbsp;<i class="chevron right icon"></i></button>
+	</div>
 	</sf:form>
 
 <%@include file="../shared/flows-footer.jsp"%>

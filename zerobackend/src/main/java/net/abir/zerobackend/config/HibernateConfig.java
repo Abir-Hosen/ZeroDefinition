@@ -24,7 +24,14 @@ public class HibernateConfig {
 	private final static String DATABASE_DIALECT="org.hibernate.dialect.MySQLDialect";
 	private final static String DATABASE_USERNAME="root";
 	private final static String DATABASE_PASSWORD="";
-
+	
+	//Api login
+	private final String GOOGLE_CLIENT_ID="123088481023-o99m5cri4opep342j0s1gj5gr271hqde.apps.googleusercontent.com";
+	private final String GOOGLE_CLIENT_SECRET="KiZ9i3f2WKiBmB6l6HDqKLdE";
+	private final String GOOGLE_REDIRECT_URL="http://localhost:8080/zerodefinition/login_with_google/";
+	
+	
+	
 	//Data source bean
 	@Bean("dataSource")
 	public DataSource getDataSource() {
@@ -35,6 +42,7 @@ public class HibernateConfig {
 		dataSource.setUrl(DATABASE_URL);
 		dataSource.setUsername(DATABASE_USERNAME);
 		dataSource.setPassword(DATABASE_PASSWORD);
+
 
 		return dataSource;
 	}

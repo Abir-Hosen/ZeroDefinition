@@ -69,7 +69,7 @@ public class RegisterHandler {
 		
 		Userinfo userinfo=model.getUserinfo();
 		userinfo.setUser(user.getId());
-		userinfo.setDate(new Date());
+		userinfo.setDate(userinfo.getBirth());
 		userinfo.setBirth(new Date());
 		userDAO.addUserInfo(userinfo);
 		

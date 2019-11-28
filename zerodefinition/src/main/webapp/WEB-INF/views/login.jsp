@@ -23,6 +23,7 @@
 <meta name="description" content="An ecomerce based project">
 <meta name="author" content="Abir Hosen">
 
+
 <title>Zero Definition - ${title}</title>
 
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -119,7 +120,7 @@ body, html {
 					<input name="${_csrf.parameterName }" type="hidden"
 						value="${_csrf.token }" />
 						
-					<button class="btn btn-lg btn-primary btn-block" type="submit">
+					<button class="btn btn-lg gray btn-block" type="submit">
 						Sign in
 					</button>
 						

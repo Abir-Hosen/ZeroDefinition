@@ -22,9 +22,12 @@
 	<!-- Share -->
 	<div class="ui row ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		<label style="font-size:20px; color: white;">Share: </label>>&nbsp;&nbsp;
-		<a href="#"><i class="facebook large inverted icon"></i></a>&nbsp;
-		<a href="#"><i class="twitter large inverted icon"></i></a>&nbsp;
-		<a href="#"><i class="linkedin large inverted icon"></i></a>
+				
+		<div class="fb-share-button" 
+		    data-href="https://www.your-domain.com/your-page.html" 
+		    data-layout="button_count">
+		</div>
+		&nbsp;
 	</div>
 	
 	<!-- Date -->
@@ -48,9 +51,12 @@
 		<!-- Share -->
 		<div class="ui row ">
 			<label style="font-size:20px; color: white;">Share: </label>>&nbsp;&nbsp;
-			<a href="#"><i class="facebook large inverted icon"></i></a>&nbsp;
-			<a href="#"><i class="twitter large inverted icon"></i></a>&nbsp;
-			<a href="#"><i class="linkedin large inverted icon"></i></a>
+					
+		<div class="fb-share-button" 
+		    data-href="https://www.your-domain.com/your-page.html" 
+		    data-layout="button_count">
+		</div>
+		&nbsp;
 		</div>
 		<br><br><br>
 	</div>

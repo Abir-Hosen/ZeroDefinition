@@ -128,16 +128,27 @@
 		
 	</div>
 	
-	<!-- Search bar -->
-	<div class="ui row">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<div class="ui search" ><br><br><br>
-		  <input class="prompt" type="text" placeholder="Search Movies...">
+		
+	<div><br><br></div>
+	
+	<!-- Breadcrumb -->
+	<div class="ui row content ">
+		<div class="ui big breadcrumb" >&nbsp;&nbsp;&nbsp;&nbsp;
+			<a class="section" style="color: white;" href="${contextRoot}/home/">Home</a>
+			<i class="angle right inverted icon"></i>
+			<a class="active section" style="color: white;" href="${contextRoot}/movies/">${title}</a>
 		</div>
 	</div>
 	
+	<!-- Search bar -->
+<!-- 	<div class="ui row">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<div class="ui search" ><br><br><br>
+		  <input class="prompt" type="text" placeholder="Search Movies...">
+		</div>
+	</div> -->
+	<div><br></div>
 	<!-- Movies -->
 	<div class="ui row">
-		
 		<!-- logic area -->
 		<c:forEach items="${movies}" var="movie">
 		<div class="ui four wide column">
@@ -184,7 +195,7 @@
 					</div>
 				</div>
 			</div>
-			<br>
+			<br><br>
 			
 		</div>
 		</c:forEach>

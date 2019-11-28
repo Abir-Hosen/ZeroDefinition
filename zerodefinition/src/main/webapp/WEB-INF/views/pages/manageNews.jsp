@@ -109,12 +109,12 @@
 			&nbsp; &nbsp;
 			<a class="section" style="color: white;" href="${contextRoot}/home/">Home</a>
 			<i class="angle right inverted icon"></i>
-			<a class="section" style="color: white;" href="${contextRoot}/blog/">Blog</a>
+			<a class="section" style="color: white;" href="${contextRoot}/news/">News</a>
 		</div>
 	</div>
 	
 	<!-- Search bar -->
-	<div class="ui row">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<%-- 	<div class="ui row">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		<!-- Selection Option -->
 		<select class="ui dropdown">
 			<option value="Default">All Categories</option>
@@ -128,15 +128,15 @@
 		  <input class="prompt" type="text" placeholder="Search Movies...">
 		  <div class="results"></div>
 		</div>
-	</div>
+	</div> --%>
 	
 	<!-- News -->
 	<div class="ui row">
 	<br>
 		<!-- logic area -->
 		<c:forEach items="${nnews}" var="news">
-		<div class="ui grid" style="background-color:#051821; ">
-			<div class="ui sixteen wide column" style="background-color:#051d28; font-style: italic;">
+		<div class="ui grid" style="background-color:#051821; border-radius: 5px;">
+			<div class="ui sixteen wide column" style="background-color:#051d28; font-style: italic; border-radius: 5px;">
 				<a class="header" style="color: #a1e2bf; font-size: 30px;" href="${contextRoot}/news/viewNews/${news.id }/${news.title}">${news.title}</a>
 			</div>
 			<div class="ui row">

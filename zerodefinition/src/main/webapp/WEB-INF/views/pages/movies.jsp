@@ -7,13 +7,21 @@
 		</div>
 	</div>
 	
+	<!-- Breadcrumb -->
+	<div class="ui row content ">
+		<div class="ui big breadcrumb" >&nbsp;&nbsp;&nbsp;
+			<a class="section" style="color: white;" href="${contextRoot}/home/">Home</a>
+			<i class="angle right inverted icon"></i>
+			<a class="active section" style="color: white;" href="${contextRoot}/movies/">${title}</a>
+		</div>
+	</div>
 	<!-- Search bar -->
-	<div class="ui row">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!-- 	<div class="ui row">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		<div class="ui search" >
 		  <input class="prompt" type="text" placeholder="Search Movies...">
 		</div>
-	</div>
-	
+	</div> -->
+	<div><br></div>
 	<!-- News -->
 	<div class="ui row">
 		

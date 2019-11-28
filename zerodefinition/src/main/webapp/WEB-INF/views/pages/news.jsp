@@ -17,7 +17,7 @@
 	</div>
 	
 	<!-- Search bar -->
-	<div class="ui row">
+<%-- 	<div class="ui row">
 		<!-- Selection Option -->
 		<select class="ui dropdown">
 			<option value="Default">All Categories</option>
@@ -31,7 +31,7 @@
 		  <input class="prompt" type="text" placeholder="Search Movies...">
 		  <div class="results"></div>
 		</div>
-	</div>
+	</div> --%>
 	
 	<!-- News -->
 	<div class="ui row">

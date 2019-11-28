@@ -7,17 +7,20 @@
 	</div>
 	<!-- head -->
 	<div class="ui row content">
-		<div class="ui six wide column">
+		<div class="ui three wide column">
 			<div >
-				<img src="${images}/th.jpg" style="width: 100%;">
+				<img src="${images}/t/1.jpg" style="width: 100%;">
 			</div>
 			<div>
-				<br><h2 style="color: red; font-size: 30px; text-align: center;">TEAM LEADER</h2>
-				<p>About him. About him. About him. About him.About him. About him. 
-				About him. About him. About him. About him. About him. About him.</p>
+
 			</div>
 		</div>
-		<div class="ui ten wide column">
+		<div class="ui thirteen wide column"> 
+			<h1  style="margin: auto; color:#42c92a;">Alauddin Rasel</h1>
+			<p style="color:#d1bc00 ">
+			<i class="industry icon"></i>&nbsp;Profession Name&nbsp;&nbsp;&nbsp;&nbsp;
+			<i class="expand icon"></i>&nbsp;Position at Zero deffinition
+			</p>
 			<p>
 				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
 				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
@@ -27,7 +30,26 @@
 				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
 				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
 				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
-				This is about the team. Team About Zero Definition.<br> This is about the team. Team About Zero Definition. 
+			</p>
+		</div>
+	</div><div><br></div>
+	<!-- head -->
+	<div class="ui row content">
+		<div class="ui three wide column">
+			<div >
+				<img src="${images}/t/2.jpg" style="width: 100%;">
+			</div>
+			<div>
+
+			</div>
+		</div>
+		<div class="ui thirteen wide column"> 
+			<h1  style="margin: auto; color:#42c92a;">Md. Rafsun</h1>
+			<p style="color:#d1bc00 ">
+			<i class="industry icon"></i>&nbsp;Profession Name&nbsp;&nbsp;&nbsp;&nbsp;
+			<i class="expand icon"></i>&nbsp;Position at Zero deffinition
+			</p>
+			<p>
 				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
 				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
 				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
@@ -35,24 +57,95 @@
 				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
 				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
 				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
-				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition.
-				This is about the team. Team About Zero Definition.<br> This is about the team. Team About Zero Definition. 
-				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
-				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
-				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
-				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
-				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
-				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
-				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
-				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
-				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
-				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
-				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
-				This is about the team. Team About Zero Definition.<br> This is about the team. Team About Zero Definition. 
 				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
 			</p>
 		</div>
-	</div>
+	</div><div><br></div>
+	<!-- head -->
+	<div class="ui row content">
+		<div class="ui three wide column">
+			<div >
+				<img src="${images}/t/3.jpg" style="width: 100%;">
+			</div>
+			<div>
+
+			</div>
+		</div>
+		<div class="ui thirteen wide column"> 
+			<h1  style="margin: auto; color:#42c92a;">Hasib Al Amin</h1>
+			<p style="color:#d1bc00 ">
+			<i class="industry icon"></i>&nbsp;Profession Name&nbsp;&nbsp;&nbsp;&nbsp;
+			<i class="expand icon"></i>&nbsp;Position at Zero deffinition
+			</p>
+			<p>
+				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
+				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
+				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
+				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
+				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
+				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
+				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
+				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
+			</p>
+		</div>
+	</div><div><br></div>
+	<!-- head -->
+	<div class="ui row content">
+		<div class="ui three wide column">
+			<div >
+				<img src="${images}/t/4.jpg" style="width: 100%;">
+			</div>
+			<div>
+
+			</div>
+		</div>
+		<div class="ui thirteen wide column"> 
+			<h1  style="margin: auto; color:#42c92a;">Sharif Rahman</h1>
+			<p style="color:#d1bc00 ">
+			<i class="industry icon"></i>&nbsp;Profession Name&nbsp;&nbsp;&nbsp;&nbsp;
+			<i class="expand icon"></i>&nbsp;Position at Zero deffinition
+			</p>
+			<p>
+				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
+				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
+				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
+				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
+				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
+				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
+				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
+				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
+			</p>
+		</div>
+	</div><div><br></div>
+	<!-- head -->
+	<div class="ui row content">
+		<div class="ui three wide column">
+			<div >
+				<img src="${images}/t/5.jpg" style="width: 100%;">
+			</div>
+			<div>
+
+			</div>
+		</div>
+		<div class="ui thirteen wide column"> 
+			<h1  style="margin: auto; color:#42c92a;">Audity Riya</h1>
+			<p style="color:#d1bc00 ">
+			<i class="industry icon"></i>&nbsp;Profession Name&nbsp;&nbsp;&nbsp;&nbsp;
+			<i class="expand icon"></i>&nbsp;Position at Zero deffinition
+			</p>
+			<p>
+				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
+				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
+				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
+				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
+				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
+				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
+				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
+				This is about the team. Team About Zero Definition. This is about the team. Team About Zero Definition. 
+			</p>
+		</div>
+	</div><div><br></div>
+	
 	<div class="ui row"><br><br><br><br></div>
 	<div class="ui three column row content">
 		<div class="ui column">
@@ -88,8 +181,10 @@
 			 About our culture. This is our culture. About our culture. This is our culture.
 			</p><br>
 		</div>
-		<div class="ui sixteen wide column">
-				<img src="${images}/t1.jpg" >
+		<div class="ui sixteen wide column" style="max-width:1366px">
+			<img class="mySlides" src="${images}/s1.jpg" style="width:100%">
+			<img class="mySlides" src="${images}/s2.jpg" style="width:100%">
+			<img class="mySlides" src="${images}/s3.jpg" style="width:100%">
 		</div>
 	</div>
 	

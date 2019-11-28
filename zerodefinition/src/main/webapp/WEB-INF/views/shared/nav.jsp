@@ -47,24 +47,7 @@
 				<div class="ui pointing dropdown link right item">
 					<span class="text">${userModel.name }</span> <i class="dropdown icon"></i>
 					<div class="menu">
-				 		<div class="header">USER-CAT</div>
-						<div class="header"><a href="${contextRoot}/profile/${userModel.id}">Profile</a></div>
-						<div class="header">Home</div>
-						<div class="item">
-							<i class="dropdown icon"></i> <span class="text">Check</span>
-							<div class="menu">
-								<div class="header">Notification</div>
-								<div class="header">Message</div>
-								<div class="header">Friend Request</div>
-								<div class="divider"></div>
-								<div class="header">Pages</div>
-								<div class="header">Group</div>
-							</div>
-						</div>
-						<div class="divider"></div>
-						<div class="header">Activity Log</div>
-						<div class="header">Setting</div>
-						<div class="header"><a href="${contextRoot}/perform-logout">Logout</a></div>
+						<div class="item"><a href="${contextRoot}/perform-logout" style="color: black;">Logout</a></div>
 					</div>
 				</div>
 		</security:authorize>

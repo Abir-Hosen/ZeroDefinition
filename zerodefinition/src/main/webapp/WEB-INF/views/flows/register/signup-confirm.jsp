@@ -16,10 +16,10 @@
 			</a>
 		</div>
 		<div class="column">
-			<p>Email: ${registerModel.userinfo.address}</p><br>
-			<p>Email: ${registerModel.userinfo.work}</p><br>
-			<p>Email: ${registerModel.userinfo.birth}</p><br>
-			<p>Email: ${registerModel.userinfo.mobile}</p>
+			<p>Address: ${registerModel.userinfo.address}</p><br>
+			<p>Work: ${registerModel.userinfo.work}</p><br>
+			<p>Birthday: ${registerModel.userinfo.birth}</p><br>
+			<p>Mobile: ${registerModel.userinfo.mobile}</p>
 			<br>
 			<a href="${flowExecutionUrl}&_eventId_userinfo">
 			<button class="ui button">
@@ -32,7 +32,7 @@
 	<div class="ui vertical divider">and</div>
 </div><br><br>
 
-<div><br><br></div>
-<a href="${flowExecutionUrl}&_eventId_submit" class="ui button">confirm</a>
+<div><br></div>
+<a href="${flowExecutionUrl}&_eventId_submit" class="ui button">confirm</a><div><br><br><br></div>
 <%@include file="../shared/flows-footer.jsp"%>
 

@@ -1,7 +1,7 @@
 <%@taglib prefix="sf" uri="http://www.springframework.org/tags/form"%>
 
 <%@include file="../shared/flows-header.jsp"%>
-
+	<div style="margin: 50px 100px;">
 	<sf:form class="ui form" method="POST" id="registerForm" modelAttribute="userinfo">
 		<div class="field">
 			<label>Address</label> 
@@ -23,10 +23,10 @@
 			<sf:input type="number" path="mobile" placeholder="Mobile"></sf:input>
 			<sf:errors path="mobile" class="error" element="em"/>
 		</div>
-<%-- 		<div class="field">
+ 		<div class="field">
 			<label>Birth</label>
 			<sf:input type="date" path="birth" placeholder="Birth Date"></sf:input>
-		</div> --%>
+		</div>
 		<div class="field">
 			<label>Blood</label>
 			<sf:input type="text" path="blood" placeholder="Blood"></sf:input>
@@ -40,7 +40,7 @@
 		<br>
 		<button class="ui button" name="_eventId_personal" type="submit"><i class="chevron left icon"></i>Previous&nbsp; -&nbsp; User&nbsp; &nbsp;</button>
 		<button class="ui button" name="_eventId_confirm" type="submit">Check&nbsp; -&nbsp; Details&nbsp; &nbsp;<i class="chevron right icon"></i></button>
-
+	</div>
 	</sf:form>
 	<br><br>
 
